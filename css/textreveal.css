@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
+
+.homepage body {
+  text-align: center;
+  background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color: white;
+  font-family: 'Bungee Hairline';
+  font-weight: 300;
+  font-size: 32px;
+  padding-top: 40vh;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bungee Hairline', cursive;
+  color: black;
+}
+
+.c, .p {
+  font-size: 40px;
+}
+
+div {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div:first-of-type {
+  /* For increasing performance
+                       ID/Class should've been used.
+                       For a small demo
+                       it's okaish for now */
+  animation: showup 7s infinite;
+  width: 14px;
+}
+
+div:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+  margin-left: -6px;
+}
+
+div:last-of-type span {
+  margin-left: -155px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -500px;
+  }
+
+  20% {
+    margin-left: -500px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+
+  30% {
+    width: 83px;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 83px;
+  }
+}
+
+p {
+  font-size: 12px;
+  color: #999;
+  margin-top: 200px;
+}
