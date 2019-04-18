@@ -24,6 +24,21 @@ h1 {
   transform: translate(-50%, -50%);
   font-family: 'Bungee Hairline', cursive;
   color: white;
+  font-size: 50px;
+}
+
+.home h1 {
+  font-size: 100px;
+}
+
+.projects h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bungee Hairline', cursive;
+  color: black;
+  font-size: 50px;
 }
 
 h2 {
@@ -79,11 +94,20 @@ p {
   color: white;
 }
 
+.nav-right-project, .nav-left-project {
+  color: black;
+}
+
 .nav-left:hover, .nav-right:hover {
   background-color: white;
   color: black;
   padding: 2px;
   border-radius: 4px;
+}
+
+.nav-right-project:hover, .nav-left-project:hover {
+  background-color: black;
+  color: white;
 }
 
 /* C O L O R   T R A N S I T I O N */
@@ -100,55 +124,87 @@ p {
 }
 
 .spray-active {
-  background-color: #dedede;
+  background-color: #989898;
 }
 
 .munch-active {
-  background-color: #d3e3eb;
+  background-color: #97a1a7;
 }
 
 /* T E X T   R E V E A L   C S S */
 /* A B O U T     P A G E */
-.about-header h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Bungee Hairline', cursive;
-  color: black;
+.full-width {
+  min-height: 100vh;
+  display: flex;
+  background: black;
 }
 
-.about-header h2 {
+.aboutinfocontainer {
+  padding: 30px;
+}
+
+.aboutinfocontainer a {
   font-family: 'Montserrat', sans-serif;
-  color: black;
+  color: white;
+}
+
+.aboutinfo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutpic {
+  width: 50%;
+  background-image: url(../media/christianna03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutinfo h1 {
+  position: relative;
+  top: unset;
+  left: unset;
+  transform: none;
+  font-family: 'Bungee Hairline', cursive;
+  color: white;
+}
+
+.aboutinfo h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 25px;
   font-size: 34px;
-  padding: 0 80px;
-  padding: 30px;
+  padding: 0 !important;
+  margin: 30px 0px;
 }
 
-.about-header h3 {
+.aboutinfo h3 {
   font-family: 'Bungee Hairline', cursive;
   font-size: 20px;
   text-transform: uppercase;
-  color: black;
+  color: white;
   text-align: center;
   letter-spacing: 4px;
-  padding: 0 80px;
-  padding: 30px;
+  padding: 0 !important;
+  margin: 30px 0px;
 }
 
-.about-header p {
+.aboutinfo p {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 200;
-  color: black;
+  color: white;
   text-align: center;
   letter-spacing: 2px;
-  padding: 0 80px;
-  padding: 30px;
+  padding: 0 !important;
+  margin: 30px 0px;
+}
+
+.aboutinfocontainer h1, .aboutinfocontainer h2, .aboutinfocontainer p {
+  text-align: left !important;
 }
 
 /* P R O J E C T S  P A G E */

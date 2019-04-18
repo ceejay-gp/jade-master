@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
-@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-.homepage body {
+.home {
   text-align: center;
   background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
-  color: white;
-  font-family: 'Bungee Hairline';
+  color: #555;
+  font-family: 'Roboto';
   font-weight: 300;
   font-size: 32px;
   padding-top: 40vh;
@@ -16,16 +15,17 @@
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-.title-container {
+.home {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Bungee Hairline', cursive;
-  color: black;
+  color: white;
+  font-size: 50px;
 }
 
-.c, .p {
+.c {
   font-size: 40px;
 }
 
